@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTracker | Minha coleção</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Navegação principal">
+            <a class="logo" href="dashboard.html">GameTracker</a>
+
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="colecao.html">Minha coleção</a>
+                <a href="buscar.html">Buscar jogos</a>
+                <a href="jogo-form.html">Adicionar jogo</a>
+                <a href="index.html">Sair</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <p>Biblioteca pessoal</p>
+
+            <h1>Minha coleção</h1>
+
+            <p>
+                Consulte, filtre e acompanhe os jogos cadastrados.
+            </p>
+        </section>
+
+        <section>
+            <div class="filters">
+                <div>
+                    <label for="buscar">Pesquisar por nome</label>
+
+                    <input
+                        type="search"
+                        id="buscar"
+                        name="buscar"
+                        placeholder="Ex.: GTA V">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+
+                    <select id="status" name="status">
+                        <option value="todos">Todos</option>
+                        <option value="pretendo">Pretendo jogar</option>
+                        <option value="jogando">Jogando</option>
+                        <option value="concluido">Concluído</option>
+                        <option value="abandonado">Abandonado</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="genero">Gênero</label>
+
+                    <select id="genero" name="genero">
+                        <option value="todos">Todos</option>
+                        <option value="acao">Ação</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="rpg">RPG</option>
+                        <option value="fps">FPS</option>
+                        <option value="terror">Terror</option>
+                        <option value="estrategia">Estratégia</option>
+                        <option value="corrida">Corrida</option>
+                        <option value="esporte">Esporte</option>
+                        <option value="luta">Luta</option>
+                        <option value="plataforma">Plataforma</option>
+                        <option value="roguelike">Roguelike</option>
+                        <option value="simulacao">Simulação</option>
+                        <option value="sandbox">Sandbox</option>
+                        <option value="sobrevivencia">Sobrevivência</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="plataforma">Plataforma</label>
+
+                    <select id="plataforma" name="plataforma">
+                        <option value="todas">Todas</option>
+                        <option value="pc">PC</option>
+                        <option value="playstation">PlayStation 5</option>
+                        <option value="xbox">Xbox Series X/S</option>
+                        <option value="switch">Nintendo Switch</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection-summary" aria-label="Resumo da coleção">
+            <span>Total: 24 jogos</span>
+            <span>FPS: 4</span>
+            <span>RPG: 6</span>
+            <span>Ação: 7</span>
+            <span>Terror: 2</span>
+            <span>Corrida: 2</span>
+            <span>Outros: 3</span>
+        </section>
+
+        <section class="page-header">
+            <h2>Jogos da coleção</h2>
+
+            <p>
+                Exemplos de jogos cadastrados para representar
+                diferentes gêneros.
+            </p>
+        </section>
+
+        <section class="card-grid">
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>Cyberpunk 2077</h2>
+
+                <p><strong>Gênero:</strong> RPG</p>
+                <p><strong>Plataforma:</strong> PC</p>
+                <p><strong>Lançamento:</strong> 2020</p>
+                <p><strong>Nota:</strong> 9/10</p>
+                <p><strong>Horas:</strong> 86h</p>
+
+                <span class="status">Jogando</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>Counter-Strike 2</h2>
+
+                <p><strong>Gênero:</strong> FPS</p>
+                <p><strong>Plataforma:</strong> PC</p>
+                <p><strong>Lançamento:</strong> 2023</p>
+                <p><strong>Nota:</strong> 9/10</p>
+                <p><strong>Horas:</strong> 540h</p>
+
+                <span class="status">Jogando</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>Resident Evil 4</h2>
+
+                <p><strong>Gênero:</strong> Terror</p>
+                <p><strong>Plataforma:</strong> PlayStation 5</p>
+                <p><strong>Lançamento:</strong> 2023</p>
+                <p><strong>Nota:</strong> 10/10</p>
+                <p><strong>Horas:</strong> 28h</p>
+
+                <span class="status">Concluído</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>Hades</h2>
+
+                <p><strong>Gênero:</strong> Roguelike</p>
+                <p><strong>Plataforma:</strong> PC</p>
+                <p><strong>Lançamento:</strong> 2020</p>
+                <p><strong>Nota:</strong> Ainda não avaliado</p>
+                <p><strong>Horas:</strong> 0h</p>
+
+                <span class="status">Pretendo jogar</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>Forza Horizon 5</h2>
+
+                <p><strong>Gênero:</strong> Corrida</p>
+                <p><strong>Plataforma:</strong> Xbox Series X/S</p>
+                <p><strong>Lançamento:</strong> 2021</p>
+                <p><strong>Nota:</strong> 8/10</p>
+                <p><strong>Horas:</strong> 72h</p>
+
+                <span class="status">Concluído</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>EA Sports FC 26</h2>
+
+                <p><strong>Gênero:</strong> Esporte</p>
+                <p><strong>Plataforma:</strong> PC</p>
+                <p><strong>Lançamento:</strong> 2025</p>
+                <p><strong>Nota:</strong> 7/10</p>
+                <p><strong>Horas:</strong> 40h</p>
+
+                <span class="status">Jogando</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>God of War Ragnarök</h2>
+
+                <p><strong>Gênero:</strong> Ação / Aventura</p>
+                <p><strong>Plataforma:</strong> PlayStation 5</p>
+                <p><strong>Lançamento:</strong> 2022</p>
+                <p><strong>Nota:</strong> 9/10</p>
+                <p><strong>Horas:</strong> 45h</p>
+
+                <span class="status">Abandonado</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>Civilization VI</h2>
+
+                <p><strong>Gênero:</strong> Estratégia</p>
+                <p><strong>Plataforma:</strong> PC</p>
+                <p><strong>Lançamento:</strong> 2016</p>
+                <p><strong>Nota:</strong> 8/10</p>
+                <p><strong>Horas:</strong> 110h</p>
+
+                <span class="status">Concluído</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+
+            <article class="game-card">
+                <div class="cover">
+                    <span>CAPA</span>
+                </div>
+
+                <h2>Tekken 8</h2>
+
+                <p><strong>Gênero:</strong> Luta</p>
+                <p><strong>Plataforma:</strong> PC</p>
+                <p><strong>Lançamento:</strong> 2024</p>
+                <p><strong>Nota:</strong> 8/10</p>
+                <p><strong>Horas:</strong> 32h</p>
+
+                <span class="status">Jogando</span>
+
+                <p>
+                    <a href="jogo.html">Ver detalhes</a>
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GameTracker</p>
+    </footer>
+
+</body>
+</html>

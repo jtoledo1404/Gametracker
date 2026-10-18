@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTracker | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Navegação principal">
+            <a class="logo" href="index.html">GameTracker</a>
+
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="login.html">Entrar</a>
+                <a href="cadastro.html">Criar conta</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <section class="form-card">
+            <div class="page-header">
+                <p>Acesse sua conta</p>
+
+                <h1>Entrar</h1>
+
+                <p>
+                    Entre para acessar sua coleção e acompanhar
+                    seus jogos.
+                </p>
+            </div>
+
+            <form action="dashboard.html" method="get">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@exemplo.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="lembrar">
+                        Lembrar de mim
+                    </label>
+                </div>
+
+                <button class="button" type="submit">
+                    Entrar
+                </button>
+            </form>
+
+            <p>
+                Esqueceu sua senha?
+                <a href="#">Recuperar senha</a>
+            </p>
+
+            <p>
+                Ainda não possui uma conta?
+                <a href="cadastro.html">Criar conta</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GameTracker</p>
+    </footer>
+
+</body>
+</html>

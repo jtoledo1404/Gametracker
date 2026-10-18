@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTracker | Buscar jogos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Navegação principal">
+            <a class="logo" href="dashboard.html">GameTracker</a>
+
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="colecao.html">Minha coleção</a>
+                <a href="buscar.html">Buscar jogos</a>
+                <a href="jogo-form.html">Adicionar jogo</a>
+                <a href="index.html">Sair</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <p>Pesquisa de jogos</p>
+
+            <h1>Buscar jogos</h1>
+
+            <p>
+                Pesquise por um jogo para consultar informações
+                e futuramente adicioná-lo à sua coleção.
+            </p>
+        </section>
+
+        <section>
+            <form class="search-form" action="#" method="get">
+                <div class="form-group">
+                    <label for="nome-jogo">Nome do jogo</label>
+
+                    <input
+                        type="search"
+                        id="nome-jogo"
+                        name="nome-jogo"
+                        placeholder="Ex.: The Witcher 3">
+                </div>
+
+                <button type="submit" class="button">
+                    Pesquisar
+                </button>
+            </form>
+        </section>
+
+        <section>
+            <div class="page-header">
+                <h2>Resultados</h2>
+
+                <p>
+                    Os resultados abaixo são exemplos da interface.
+                    A integração com a RAWG poderá ser feita depois.
+                </p>
+            </div>
+
+            <article class="search-result">
+                <div class="search-cover">
+                    <span>CAPA</span>
+                </div>
+
+                <div>
+                    <h3>The Witcher 3: Wild Hunt</h3>
+
+                    <p>Gênero: RPG</p>
+                    <p>Lançamento: 2015</p>
+
+                    <p>
+                        Plataformas: PC, PlayStation, Xbox
+                        e Nintendo Switch
+                    </p>
+
+                    <a class="button" href="jogo-form.html">
+                        Adicionar à coleção
+                    </a>
+                </div>
+            </article>
+
+            <article class="search-result">
+                <div class="search-cover">
+                    <span>CAPA</span>
+                </div>
+
+                <div>
+                    <h3>Elden Ring</h3>
+
+                    <p>Gênero: RPG e Ação</p>
+                    <p>Lançamento: 2022</p>
+
+                    <p>
+                        Plataformas: PC, PlayStation e Xbox
+                    </p>
+
+                    <a class="button" href="jogo-form.html">
+                        Adicionar à coleção
+                    </a>
+                </div>
+            </article>
+
+            <article class="search-result">
+                <div class="search-cover">
+                    <span>CAPA</span>
+                </div>
+
+                <div>
+                    <h3>DOOM Eternal</h3>
+
+                    <p>Gênero: FPS</p>
+                    <p>Lançamento: 2020</p>
+
+                    <p>
+                        Plataformas: PC, PlayStation, Xbox e Switch
+                    </p>
+
+                    <a class="button" href="jogo-form.html">
+                        Adicionar à coleção
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GameTracker</p>
+    </footer>
+
+</body>
+</html>
